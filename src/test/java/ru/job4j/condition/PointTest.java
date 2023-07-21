@@ -59,4 +59,15 @@ class PointTest {
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when21to20then1() {
+        double expected = 1;
+        int x1 = 2;
+        int y1 = 1;
+        int x2 = 2;
+        int y2 = 0;
+        double out = Point.distance(x1, y1, x2, y2);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
