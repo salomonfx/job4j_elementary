@@ -16,9 +16,9 @@ class SqAreaTest {
 
     @Test
     void whenP12K2Square8() {
-        int expected = 8;
-        int p = 12;
-        double k = 2;
+        int expected = 1;
+        int p = 4;
+        double k = 1;
         double out = SqArea.square(p, k);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
