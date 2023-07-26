@@ -2,7 +2,13 @@ package ru.job4j.condition;
 
 public class ThreeMax {
     public static int max(int first, int second, int third) {
-        return Math.max(Math.max(first, second), third);
+        if (first >= second && first >= third) {
+            return first;
+        } else if (second >= first && second >= third) {
+            return second;
+        } else {
+            return third;
+        }
     }
 }
 
