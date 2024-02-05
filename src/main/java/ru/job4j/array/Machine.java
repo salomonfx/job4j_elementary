@@ -11,8 +11,7 @@ public class Machine {
         for (int coin : coins) {
             while (money >= coin) {
                 money -= coin;
-                result[size] += coin;
-                size++;
+                result[size++] = coin;
             }
         }
 
